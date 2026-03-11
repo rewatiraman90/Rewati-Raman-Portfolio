@@ -107,6 +107,58 @@
   font-size: 15px;
 }
 
+.carousel-description {
+  margin-top: 20px;
+  max-width: 450px;
+}
+
+.carousel-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #eae5ec;
+  font-weight: 300;
+  margin: 0;
+}
+
+.carousel-link {
+  margin-top: 30px;
+}
+
+.live-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  color: #eae5ec;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.live-link-btn:hover {
+  background: rgba(94, 234, 212, 0.1);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(94, 234, 212, 0.1);
+}
+
+.live-link-btn svg {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.live-link-btn:hover svg {
+  transform: translateX(5px);
+}
+
 .carousel-image-wrapper {
   flex: 1;
   display: flex;

@@ -5,39 +5,52 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
+    title: "AI Legal Bodyguard",
+    category: "AI Legal Defense",
+    tools: "Next.js, OpenAI, RBI Legal Framework",
+    description: "An AI-powered system designed to handle aggressive debt recovery calls automatically, citing RBI regulations and legal directions to protect borrowers from harassment.",
+    image: "/images/legals hield.png",
+    link: "https://github.com/rewatiraman90/AI-legal-Bodyguard",
+  },
+  {
+    title: "Toli (Lumina)",
+    category: "Conscious Social Platform",
+    tools: "Next.js, Supabase, Semantic Matching",
+    description: "A conscious connection platform focusing on meaningful interactions through context-based social graphs, matching people based on their wavelength.",
+    image: "/images/toli.png",
+    link: "https://toli-beryl.vercel.app/",
+  },
+  {
     title: "AI-Polemic",
-    category: "Generative AI Website",
+    category: "Generative AI Web App",
     tools: "OpenAI API, Custom Prompts, Firebase, Netlify",
+    description: "The internet's most perpetually annoyed AI — a sarcastic debater equipped with high-level sarcasm, voice enablement, and rudeness levels.",
     image: "/images/Solidx.png",
     link: "https://ai-polemic.online/",
   },
   {
-    title: "Rent My Stuff",
-    category: "P2P Asset Platform",
-    tools: "Firebase Auth, Cloud Functions, Netlify, PostgreSQL",
-    image: "/images/radix.png",
-    link: "https://rentmystuff.in.net",
+    title: "The Same Vibe",
+    category: "Semantic Matching Platform",
+    tools: "React, AI Matching, Daily Prompts",
+    description: "A platform that matches people based on their thoughts and responses to daily prompts, prioritizing intellectual and emotional compatibility.",
+    image: "/images/thesamevibe.png",
+    link: "https://thesamevibe.online/",
   },
   {
-    title: "Heavy Renter",
+    title: "Heavy Renter (Big-Tool)",
     category: "B2P Equipment Marketplace",
-    tools: "Full-Stack, Firebase Auth, Netlify Deployment",
+    tools: "React, RBAC Admin Panel, Full-Stack",
+    description: "A comprehensive marketplace for renting construction equipment across India, featuring a robust role-based access control (RBAC) admin and team management system.",
     image: "/images/bond.png",
     link: "https://heavyrenter.com/",
   },
   {
-    title: "On-Premise to Cloud Migration",
-    category: "Cloud Infrastructure",
-    tools: "Azure Migrate, Windows Server, Zero Data Loss",
-    image: "/images/sapphire.png",
-    link: "#",
-  },
-  {
-    title: "Multi-Cloud Cost Optimization",
-    category: "DevOps / FinOps",
-    tools: "AWS Spot Instances, Auto-Scaling, Azure, GCP",
-    image: "/images/Maxlife.png",
-    link: "#",
+    title: "Asset Circle",
+    category: "P2P Asset Marketplace",
+    tools: "Vite, React, Firebase, Tailwind CSS",
+    description: "A trusted marketplace for high-end equipment. Rent, sell, swap, or donate premium assets like cameras and drones with verified users.",
+    image: "/images/assetcircle.png",
+    link: "https://rent-my-stuff1.web.app/",
   },
 ];
 
@@ -113,10 +126,26 @@ const Work = () => {
                         <p className="carousel-category">
                           {project.category}
                         </p>
+                        <div className="carousel-description">
+                           <p>{project.description}</p>
+                        </div>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.link !== "#" && (
+                          <div className="carousel-link">
+                            <a 
+                              href={project.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="live-link-btn"
+                              data-cursor="disable"
+                            >
+                              Live Project <MdArrowForward />
+                            </a>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">

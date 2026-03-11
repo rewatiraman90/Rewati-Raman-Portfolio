@@ -36,14 +36,6 @@ const Contact = () => {
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://ai-polemic.online/"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              AI-Polemic Project <MdArrowOutward />
-            </a>
           </div>
           <div className="contact-box">
             <h2>

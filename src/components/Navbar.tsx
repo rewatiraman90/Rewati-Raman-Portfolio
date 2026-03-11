@@ -68,6 +68,11 @@ const Navbar = () => {
               <HoverLinks text="CONTACT" />
             </a>
           </li>
+          <li>
+            <a href="/Resume-Rewati-Raman.pdf" target="_blank">
+              <HoverLinks text="RESUME" />
+            </a>
+          </li>
         </ul>
       </div>
 
