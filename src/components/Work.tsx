@@ -10,7 +10,7 @@ const projects = [
     tools: "Next.js, OpenAI, RBI Legal Framework",
     description: "An AI-powered system designed to handle aggressive debt recovery calls automatically, citing RBI regulations and legal directions to protect borrowers from harassment.",
     image: "/images/legals hield.png",
-    link: "https://github.com/rewatiraman90/AI-legal-Bodyguard",
+    link: "https://ai-legal-bodyguard-delta.vercel.app/",
   },
   {
     title: "Toli (Lumina)",
